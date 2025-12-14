@@ -3,7 +3,7 @@
 This repository contains the **final notebook used for our Quantum Battlefield project**, where two teams of units fight on an 8×8 grid using different movement policies:
 
 - **QRW**: a *Quantum Random Walk* policy (2D walk with a 9-move coin).
-- **HEQTO**: a QAOA/optimizer-based policy (team-level tactical optimization).
+- **HEQTO**: a shallow QAOA/optimizer-based policy for IQM Hardware efficiency.
 - **Classical baselines**: random and greedy movement.
 
 The notebook supports **simulation runs** (fast) and **real-hardware runs** (slow) via a Qiskit backend.
@@ -15,7 +15,6 @@ The notebook supports **simulation runs** (fast) and **real-hardware runs** (slo
 - `Finaloso.ipynb` — **main deliverable** (all code + experiments).
 - (Optional outputs created by the notebook)
   - `*.png` — transpiled circuit images (QRW/HEQTO hardware runs).
-  - `battle_trace_*.json` — per-turn unit positions for offline visualization.
 
 ---
 
@@ -140,21 +139,15 @@ For hardware-specific runs:
 
 ## Deliverable checklist
 
-- ✅ Simulation matchups (QRW / HEQTO / baselines)
-- ✅ Random scenario added alongside the three fixed scenarios
-- ✅ Hardware-ready QRW policy with circuit export
-- ✅ Hardware-ready HEQTO policy wrapper
-- ✅ JSON export of battle traces for external visualization
-- ✅ Scalability analysis cell (QRW + HEQTO, see notebook)
+- Simulation matchups (QRW / HEQTO / baselines)
+- Random scenario added alongside the three fixed scenarios
+- Hardware-ready QRW policy with circuit export
+- Hardware-ready HEQTO policy wrapper
+- JSON export of battle traces for external visualization
+- Scalability analysis cell (QRW + HEQTO, see notebook)
 
 ---
 
-## Citation / attribution
-
-This project was developed for a hackathon-style quantum computing challenge.
-The HEQTO method is imported from the project’s `src/heqto.py` (when available in the environment).
-
----
 
 ## Troubleshooting
 
@@ -164,9 +157,3 @@ The HEQTO method is imported from the project’s `src/heqto.py` (when available
   - Reduce `shots`, run a single battle, and expect queue delays.
 - **Bitstring order issues**
   - Some backends require reversing bitstrings before decoding; the notebook exposes a `reverse_bits` flag where relevant.
-
----
-
-## License
-
-Academic / educational use (as per course / hackathon submission).
