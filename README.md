@@ -155,3 +155,23 @@ For hardware-specific runs:
   - Reduce `shots`, run a single battle, and expect queue delays.
 - **Bitstring order issues**
   - Some backends require reversing bitstrings before decoding; the notebook exposes a `reverse_bits` flag where relevant.
+ 
+## Bibliography
+
+J. Kempe, “Quantum random walks: an introductory overview,” Contemporary Physics, vol. 44, no. 4, pp. 307–327, 2003.
+
+A. Ambainis, “Quantum walks and their algorithmic applications,” International Journal of Quantum Information, vol. 1, no. 4, pp. 507–518, 2003.
+
+Farhi, E., et al. (2014). "A Quantum Approximate Optimization Algorithm." arXiv:1411.402Pelofske, E., et al. (2024). "Short-depth QAOA circuits and quantum annealing on higher-order Ising models." npj Quantum Information, 10, 30.
+
+Pelofske, E., et al. (2024). "Scaling whole-chip QAOA for higher-order Ising spin glass models on heavy-hex graphs." npj Quantum Information, 10, 109.
+
+Saini, R., et al. (2024). "Dynamic Depth Quantum Approximate Optimization Algorithm for Solving Constrained Shortest Path Problem." arXiv:2511.08657
+Patel, Y.J., et al. (2024). "Reinforcement learning assisted recursive QAOA." EPJ Quantum Technology, 11(1), 6.
+
+IQM Quantum Computers (2024). "Technology and Performance Benchmarks of IQM's 20-Qubit Quantum Computer." arXiv:2408.12433
+
+IQM Quantum Computers (2024). "IQM Star Topology Amplifies All-to-All Qubit Connectivity." Technical Report.
+
+Herrman, R., et al. (2024). "Dynamic adaptive quantum approximate optimization algorithm for shallow, noise-resilient circuits." Physical Review A, 109, 032420.
+
