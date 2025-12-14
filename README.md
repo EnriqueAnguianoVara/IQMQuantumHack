@@ -12,9 +12,7 @@ The notebook supports **simulation runs** (fast) and **real-hardware runs** (slo
 
 ## Contents
 
-- `Finaloso.ipynb` — **main deliverable** (all code + experiments).
-- (Optional outputs created by the notebook)
-  - `*.png` — transpiled circuit images (QRW/HEQTO hardware runs).
+- `Imperivm.ipynb` — **main deliverable** (all code + experiments).
 
 ---
 
@@ -83,7 +81,7 @@ The JSON typically includes:
 
 3. Open and run the notebook:
    ```bash
-   jupyter notebook Finaloso.ipynb
+   jupyter notebook Imperivm.ipynb
    ```
    Run cells **top to bottom**.
 
